@@ -1,0 +1,12 @@
+
+S0=100
+K=105
+T=1
+r=0.05
+sigma=0.2
+
+#Monte carlo pricing
+z=random.standard_normal(I)
+ST=S0*exp((r-0.5sigma**2)*T+sigma*sqrt(T)*z
+h=maximum(ST-K,0)
+C=exp(-r*T)*sum(h)/I
